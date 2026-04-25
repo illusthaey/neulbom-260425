@@ -10,7 +10,7 @@ window.NEULBOM_SITE_CONFIG = {
     titleSuffix: "업무천재 고주무관",
     homeHref: "/",
     homeAriaLabel: "늘봄학교 행정 실무 가이드 홈",
-    description: "문서등록대장으로 업무 공부하는 방법, 늘봄지원실장·늘봄학교전담사 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드를 모은 비공식 실무 보조 사이트"
+    description: "문서등록대장 보고 스스로 업무 공부하는 방법, 늘봄지원실장·늘봄학교전담사 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드를 모은 비공식 실무 보조 사이트"
   },
 
   navigation: [
@@ -22,13 +22,13 @@ window.NEULBOM_SITE_CONFIG = {
 
   pages: {
     home: {
-      browserTitle: "늘봄학교 실무 가이드 | 업무천재 고주무관",
-      footerLabel: "비공식 실무 보조 사이트",
+      browserTitle: "업무천재 고주무관의 늘봄학교 행정 실무 가이드",
+      footerLabel: "업무 공부 열심히 합시다.",
       hero: {
         type: "home",
         kicker: "Gangwon Neulbom Practical Site",
         titleHtml: "늘봄업무,<br />자료 확인부터 완성자료 제출까지",
-        lead: "늘봄 관련 내용만 분리한 독립 사이트입니다. 업무 공부 방법, 늘봄지원실장·전담사 실무연수 제안서, 행정·회계 처리 가이드를 세 가지 트랙으로 구성했습니다.",
+        lead: "<b>목표<b><br/>*늘봄학교전담사: 본인이 맡은 업무의 지침과 자료를 스스로 찾아보고 검토하고 판단하여 혼자서도 업무를 수행할 수 있게 된다. <br/>*늘봄지원실장: 늘봄 업무 전반 관리자로서 늘봄학교전담사의 업무 처리 내역을 검토하고 지도할 수 있게 된다. <br/>→ 행정실을 비롯한 유관부서에서 업무 처리가 가능한 형태의 산출자료를 전달하여 학교 운영이 원활해지도록 하는 것이 최종 목표임.",
         image: "/static/alien.jpg",
         actions: [
           { label: "세 가지 구성 보기", href: "#modules", variant: "primary" },
