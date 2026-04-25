@@ -31,7 +31,7 @@ window.NEULBOM_SITE_CONFIG = {
         lead: "본인 업무는 스스로 업무 자료 찾아보고 공부하고 검토해서 행정실에 문의 없이 혼자 힘으로 처리할 수 있도록 합시다.",
         image: "/static/alien.jpg",
         actions: [
-          { label: "세 가지 구성 보기", href: "#modules", variant: "primary" },
+          { label: "사이트 구조", href: "#modules", variant: "primary" },
           { label: "업무 경계 보기", href: "#boundary", variant: "ghost" },
           { label: "통합 검색", href: "#search", variant: "ghost" }
         ]
