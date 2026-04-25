@@ -4,12 +4,12 @@
  */
 window.NEULBOM_SITE_CONFIG = {
   site: {
-    name: "늘봄학교 실무 가이드",
-    shortName: "늘봄",
-    titleSuffix: "늘봄학교 실무 허브",
+    name: "업무천재 고주무관의 늘봄학교 실무 가이드",
+    shortName: "고",
+    titleSuffix: "업무천재 고주무관",
     homeHref: "/",
-    homeAriaLabel: "늘봄학교 실무 가이드 홈",
-    description: "늘봄 관련 내용만 분리한 독립 사이트입니다. 업무 공부 방법, 늘봄지원실장·전담사 실무연수 제안서, 행정·회계 처리 가이드를 세 가지 트랙으로 구성했습니다."
+    homeAriaLabel: "홈 화면",
+    description: 문서등록대장으로 업무 공부하는 방법, 늘봄지원실 업무 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드 등"
   },
 
   navigation: [
