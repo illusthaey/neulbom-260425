@@ -9,7 +9,7 @@ window.NEULBOM_SITE_CONFIG = {
     titleSuffix: "업무천재 고주무관",
     homeHref: "/",
     homeAriaLabel: "홈 화면",
-    description: 문서등록대장으로 업무 공부하는 방법, 늘봄지원실 업무 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드 등",
+    description: "문서등록대장으로 업무 공부하는 방법, 늘봄지원실 업무 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드 등"
   },
 
   navigation: [
