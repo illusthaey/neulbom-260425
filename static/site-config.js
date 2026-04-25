@@ -27,7 +27,7 @@ window.NEULBOM_SITE_CONFIG = {
       hero: {
         type: "home",
         kicker: "Gangwon Neulbom Practical Site",
-        titleHtml: "늘봄업무,<br />자료 확인부터 완성자료 제출까지",
+        titleHtml: "늘봄 업무,<br />스스로 공부합시다.",
         lead: "본인 업무는 스스로 업무 자료 찾아보고 공부하고 검토해서 행정실에 문의 없이 혼자 힘으로 처리할 수 있도록 합시다.",
         image: "/static/alien.jpg",
         actions: [
