@@ -1,6 +1,7 @@
 /* static/site-config.js
  * 사이트 전체에서 반복되는 제목, 메뉴, 페이지 상단 문구, 목차, 푸터 문구를 한 곳에서 관리
  * 개별 HTML은 body의 data-page-key만 지정하고, 상단 헤더·페이지 히어로·목차·푸터는 site.js가 이 설정을 읽어 렌더링
+ , attrs: { target: "_blank", rel: "noopener noreferrer" } 
  */
 
 window.NEULBOM_SITE_CONFIG = {
@@ -131,7 +132,7 @@ window.NEULBOM_SITE_CONFIG = {
         lead: "사이트 내용의 근거로 사용한 늘봄·방과후·학교회계 관련 자료입니다. 최종 판단은 원문 공문과 학교 자체 운영계획을 우선합니다.",
         actions: [
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
-          { label: "다운로드 폴더 페이지", href: "/file-download/docs/", variant: "primary" }
+          { label: "다운로드 폴더 페이지", href: "/file-download/docs/", variant: "primary"}
         ]
       }
     },
