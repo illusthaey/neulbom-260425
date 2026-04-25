@@ -94,7 +94,7 @@
       <header class="brand-site-header no-print">
         <div class="shell">
           <a class="brand-home-link" href="${escapeHtml(site.homeHref || "/")}" aria-label="${escapeHtml(site.homeAriaLabel || site.name || "홈")}">
-            <span>${escapeHtml(site.name || "늘봄학교 실무 가이드")}</span>
+            <span>${escapeHtml(site.name || "늘봄학교 행정 실무 가이드")}</span>
           </a>
           <nav class="brand-site-header__nav" aria-label="주요 메뉴">${navHtml}</nav>
         </div>
