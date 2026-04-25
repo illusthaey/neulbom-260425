@@ -49,13 +49,13 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "study-method": {
-      browserTitle: "업무 공부하는 방법 | 늘봄학교 실무 가이드",
-      footerLabel: "업무 공부하는 방법",
+      browserTitle: "업무 공부하는 방법 | 늘봄학교 행정 실무 가이드",
+      footerLabel: "문서등록대장 보고 업무 공부하는 방법",
       hero: {
-        breadcrumb: "업무 공부하는 방법",
+        breadcrumb: "문서등록대장 보고 업무 공부하는 방법",
         kicker: "Track 01 · Self Study",
-        title: "업무 공부하는 방법",
-        lead: "목표는 구두로 다시 설명받는 것이 아니라, 담당자가 스스로 근거를 찾고 전년도 최종본을 확인한 뒤 행정실에는 회계처리 가능한 완성자료를 제출하게 만드는 것입니다.",
+        title: "문서등록대장 보고 업무 공부하는 방법",
+        lead: "늘봄 사업 담당자가 스스로 업무 자료와 근거를 찾아보고 검토하여 본인 스스로 업무를 처리하고, 유관부서에서 업무처리가 가능한 형태의 산출자료를 작성할 수 있다.",
         actions: [
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
           { label: "행정·회계 가이드로 이동", href: "/admin-accounting-guide/", variant: "primary" }
@@ -73,7 +73,7 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "training-proposal": {
-      browserTitle: "역량 강화 연수 제안서 | 늘봄학교 실무 가이드",
+      browserTitle: "역량 강화 연수 제안서 | 늘봄학교 행정 실무 가이드",
       footerLabel: "역량 강화 연수 제안서",
       hero: {
         breadcrumb: "역량 강화 연수 제안서",
@@ -96,7 +96,7 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "admin-accounting-guide": {
-      browserTitle: "행정·회계 업무 가이드 | 늘봄학교 실무 가이드",
+      browserTitle: "행정·회계 업무 가이드 | 늘봄학교 행정 실무 가이드",
       footerLabel: "행정·회계 업무 가이드",
       hero: {
         breadcrumb: "행정·회계 업무 가이드",
@@ -122,7 +122,7 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     references: {
-      browserTitle: "근거자료 | 늘봄학교 실무 가이드",
+      browserTitle: "근거자료 | 늘봄학교 행정 실무 가이드",
       footerLabel: "근거자료",
       hero: {
         breadcrumb: "근거자료",
@@ -137,7 +137,7 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "not-found": {
-      browserTitle: "페이지를 찾을 수 없습니다 | 늘봄학교 실무 가이드",
+      browserTitle: "페이지를 찾을 수 없습니다 | 늘봄학교 행정 실무 가이드",
       footerLabel: "404",
       hero: {
         breadcrumb: "404",
