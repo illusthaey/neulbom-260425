@@ -2,10 +2,10 @@
   "use strict";
 
   const CONFIG = window.NEULBOM_SITE_CONFIG || {
-    site: { name: "늘봄학교 실무 가이드", shortName: "늘봄", homeHref: "/" },
+    site: { name: "업무천재 고주무관의 늘봄학교 행정 실무 가이드", shortName: "고", homeHref: "/" },
     navigation: [],
     pages: {},
-    footer: { brand: "늘봄학교 실무 허브", note: "비공식 실무 보조 사이트" },
+    footer: { brand: "늘봄학교 행정 실무 가이드", note: "업무 공부 열심히 합시다." },
     topButton: { label: "위로", ariaLabel: "페이지 위로 이동", showAfter: 320 }
   };
 
