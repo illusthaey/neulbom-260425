@@ -28,7 +28,7 @@ window.NEULBOM_SITE_CONFIG = {
         type: "home",
         kicker: "Gangwon Neulbom Practical Site",
         titleHtml: "늘봄업무,<br />자료 확인부터 완성자료 제출까지",
-        lead: "<b>목표<b><br/>*늘봄학교전담사: 본인이 맡은 업무의 지침과 자료를 스스로 찾아보고 검토하고 판단하여 혼자서도 업무를 수행할 수 있게 된다. <br/>*늘봄지원실장: 늘봄 업무 전반 관리자로서 늘봄학교전담사의 업무 처리 내역을 검토하고 지도할 수 있게 된다. <br/>→ 행정실을 비롯한 유관부서에서 업무 처리가 가능한 형태의 산출자료를 전달하여 학교 운영이 원활해지도록 하는 것이 최종 목표임.",
+        lead: "본인 업무는 스스로 업무 자료 찾아보고 공부하고 검토해서 행정실에 문의 없이 혼자 힘으로 처리할 수 있도록 합시다.",
         image: "/static/alien.jpg",
         actions: [
           { label: "세 가지 구성 보기", href: "#modules", variant: "primary" },
