@@ -1,6 +1,6 @@
 /* static/site-config.js
  * 사이트 전체에서 반복되는 제목, 메뉴, 페이지 상단 문구, 목차, 푸터 문구를 한 곳에서 관리합니다.
- * 개별 HTML은 data-page-key만 지정하고, 상단 헤더·페이지 히어로·목차·푸터는 site.js가 이 설정을 읽어 렌더링합니다.
+ * 개별 HTML은 body의 data-page-key만 지정하고, 상단 헤더·페이지 히어로·목차·푸터는 site.js가 이 설정을 읽어 렌더링합니다.
  */
 window.NEULBOM_SITE_CONFIG = {
   site: {
@@ -8,20 +8,20 @@ window.NEULBOM_SITE_CONFIG = {
     shortName: "고",
     titleSuffix: "업무천재 고주무관",
     homeHref: "/",
-    homeAriaLabel: "홈 화면",
-    description: "문서등록대장으로 업무 공부하는 방법, 늘봄지원실 업무 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드 등"
+    homeAriaLabel: "늘봄학교 실무 가이드 홈",
+    description: "문서등록대장으로 업무 공부하는 방법, 늘봄지원실장·늘봄학교전담사 역량 강화 연수 제안서, 늘봄 운영 관련 행정·회계 업무 처리 가이드를 모은 비공식 실무 보조 사이트입니다."
   },
 
   navigation: [
-    { key: "study-method", label: "업무 공부하는 방법", href: "/study-method/" },
-    { key: "training-proposal", label: "연수 제안서", href: "/training-proposal/" },
-    { key: "admin-accounting-guide", label: "행정·회계 가이드", href: "/admin-accounting-guide/" },
+    { key: "study-method", label: "업무 공부", href: "/study-method/" },
+    { key: "training-proposal", label: "연수 제안", href: "/training-proposal/" },
+    { key: "admin-accounting-guide", label: "행정·회계", href: "/admin-accounting-guide/" },
     { key: "references", label: "근거자료", href: "/references/" }
   ],
 
   pages: {
     home: {
-      browserTitle: "업무 공부 좀 해라 이것들아",
+      browserTitle: "늘봄학교 실무 가이드 | 업무천재 고주무관",
       footerLabel: "비공식 실무 보조 사이트",
       hero: {
         type: "home",
@@ -48,13 +48,13 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "study-method": {
-      browserTitle: "업무 공부하는 방법 | 늘봄학교 실무 허브",
+      browserTitle: "업무 공부하는 방법 | 늘봄학교 실무 가이드",
       footerLabel: "업무 공부하는 방법",
       hero: {
         breadcrumb: "업무 공부하는 방법",
         kicker: "Track 01 · Self Study",
         title: "업무 공부하는 방법",
-        lead: "목표는 “구두로 다시 설명받기”가 아니라, 담당자가 스스로 근거를 찾고, 전년도 최종본을 확인하고, 행정실에는 회계처리 가능한 완성자료를 제출하게 만드는 것입니다.",
+        lead: "목표는 구두로 다시 설명받는 것이 아니라, 담당자가 스스로 근거를 찾고 전년도 최종본을 확인한 뒤 행정실에는 회계처리 가능한 완성자료를 제출하게 만드는 것입니다.",
         actions: [
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
           { label: "행정·회계 가이드로 이동", href: "/admin-accounting-guide/", variant: "primary" }
@@ -72,7 +72,7 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "training-proposal": {
-      browserTitle: "역량 강화 연수 제안서 | 늘봄학교 실무 허브",
+      browserTitle: "역량 강화 연수 제안서 | 늘봄학교 실무 가이드",
       footerLabel: "역량 강화 연수 제안서",
       hero: {
         breadcrumb: "역량 강화 연수 제안서",
@@ -95,13 +95,13 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "admin-accounting-guide": {
-      browserTitle: "행정·회계 업무 가이드 | 늘봄학교 실무 허브",
+      browserTitle: "행정·회계 업무 가이드 | 늘봄학교 실무 가이드",
       footerLabel: "행정·회계 업무 가이드",
       hero: {
         breadcrumb: "행정·회계 업무 가이드",
         kicker: "Track 03 · Admin & Accounting",
         title: "늘봄 업무 처리 시 필요한 행정·회계 업무 가이드",
-        lead: "행정실이 바로 회계처리할 수 있도록 늘봄지원실에서 완성해야 할 자료의 기준을 정리했습니다. 계약·징수·환불·지급은 “근거, 대상, 금액, 증빙, 결재선”이 핵심입니다.",
+        lead: "행정실이 바로 회계처리할 수 있도록 늘봄지원실에서 완성해야 할 자료의 기준을 정리했습니다. 계약·징수·환불·지급은 근거, 대상, 금액, 증빙, 결재선이 핵심입니다.",
         actions: [
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
           { label: "징수요구 예시 복사", type: "button", variant: "primary", attrs: { "data-copy-target": "feeTemplate" } }
@@ -121,7 +121,7 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     references: {
-      browserTitle: "근거자료 | 늘봄학교 실무 허브",
+      browserTitle: "근거자료 | 늘봄학교 실무 가이드",
       footerLabel: "근거자료",
       hero: {
         breadcrumb: "근거자료",
@@ -136,9 +136,20 @@ window.NEULBOM_SITE_CONFIG = {
     },
 
     "not-found": {
-      browserTitle: "페이지를 찾을 수 없습니다 | 늘봄학교 행정·회계 실무 허브",
+      browserTitle: "페이지를 찾을 수 없습니다 | 늘봄학교 실무 가이드",
       footerLabel: "404",
-      description: "주소를 확인하거나 메인으로 돌아가 필요한 자료를 다시 선택해 주세요."
+      hero: {
+        breadcrumb: "404",
+        kicker: "404",
+        title: "페이지를 찾을 수 없습니다.",
+        lead: "주소를 확인하거나 메인으로 돌아가 필요한 자료를 다시 선택해 주세요.",
+        actions: [
+          { label: "메인으로 돌아가기", href: "/", variant: "primary" },
+          { label: "업무 공부", href: "/study-method/", variant: "ghost" },
+          { label: "연수 제안", href: "/training-proposal/", variant: "ghost" },
+          { label: "행정·회계 가이드", href: "/admin-accounting-guide/", variant: "ghost" }
+        ]
+      }
     }
   },
 

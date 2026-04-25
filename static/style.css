@@ -2554,3 +2554,199 @@ body.brand-site [data-legacy-theme-button] {
 }
 
 
+
+/* =========================================================
+   Neulbom standalone fixes — 2026-04-25
+   기존 /static/style.css 디자인 토큰과 카드 UI를 기준으로 새 늘봄 사이트 마크업 보정
+   ========================================================= */
+
+/* 공통 헤더 내비게이션 */
+.brand-site-header__nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: var(--space-2);
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.brand-site-header__nav::-webkit-scrollbar { display: none; }
+.brand-site-header__nav .btn-home[aria-current="page"] {
+  border-color: var(--accent);
+  color: var(--text);
+  background: var(--surface-2);
+}
+
+/* 페이지 상단 */
+.page-hero {
+  display: grid;
+  gap: var(--space-4);
+  padding: clamp(40px, 7vw, 80px) 0 clamp(24px, 5vw, 48px);
+}
+.page-hero h1 {
+  max-width: 26ch;
+  margin: 0;
+}
+.page-hero .page-lead {
+  max-width: 760px;
+}
+.breadcrumb {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  color: var(--text-muted);
+  font-size: var(--fs-sm);
+}
+.breadcrumb a {
+  color: var(--text-muted);
+}
+.breadcrumb span:last-child {
+  color: var(--text-secondary);
+}
+.local-nav,
+.quick-nav {
+  margin-top: var(--space-4);
+}
+
+/* 카드/그리드: 새 페이지에서 쓰는 이름을 기존 홈 카드 UI에 맞춤 */
+.module-grid,
+.doc-grid,
+.feature-grid,
+.three-col,
+.info-grid {
+  display: grid;
+  gap: var(--space-3);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  margin-top: var(--space-4);
+}
+.module-card,
+.doc-card,
+.feature-card {
+  display: grid;
+  align-content: start;
+  gap: var(--space-3);
+  padding: var(--space-5);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: var(--r-lg);
+  box-shadow: none;
+}
+.module-card:hover,
+.doc-card:hover,
+.feature-card:hover {
+  border-color: var(--border-strong);
+  background: var(--surface-2);
+}
+.module-card h3,
+.doc-card h3,
+.feature-card h3,
+.info-card h3,
+.tool-card h3 {
+  margin: 0;
+  font-size: var(--fs-md);
+  line-height: 1.35;
+}
+.module-card p,
+.doc-card p,
+.feature-card p {
+  margin: 0;
+}
+.module-number,
+.small-label {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 26px;
+  padding: 0 10px;
+  border: 1px solid var(--border);
+  border-radius: var(--r-pill);
+  background: var(--surface-2);
+  color: var(--text-secondary);
+  font-family: var(--font-mono);
+  font-size: var(--fs-xs);
+  font-weight: 600;
+  letter-spacing: 0.04em;
+}
+.module-meta {
+  margin: 0;
+  padding-left: 18px;
+}
+.module-meta li {
+  color: var(--text-secondary);
+  font-size: var(--fs-sm);
+}
+
+/* 콜아웃 강조선 */
+.callout.left-strong {
+  border-left-width: 5px;
+}
+.callout.blue { border-left-color: var(--brand); }
+.callout.green { border-left-color: var(--success); }
+.callout.yellow { border-left-color: oklch(72% 0.12 88); }
+.callout.red { border-left-color: var(--danger); }
+
+/* 체크표 */
+.check-table td:last-child,
+.check-table th:last-child {
+  width: 96px;
+  text-align: center !important;
+  font-family: var(--font-mono);
+}
+
+/* 작은 버튼 */
+.btn.small,
+button.btn.small {
+  height: var(--h-control-sm);
+  padding: 0 12px;
+  font-size: var(--fs-xs);
+}
+
+/* 페이지 위로 버튼 */
+.back-to-top {
+  position: fixed;
+  right: clamp(16px, 3vw, 32px);
+  bottom: clamp(16px, 3vw, 32px);
+  z-index: 9998;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  min-width: 48px;
+  height: 40px;
+  padding: 0 14px;
+  border: 1px solid var(--border-strong);
+  border-radius: var(--r-pill);
+  background: var(--surface);
+  color: var(--text-secondary);
+  box-shadow: 0 8px 20px oklch(15% 0.01 255 / 0.12);
+  font-size: var(--fs-sm);
+  font-weight: 600;
+}
+.back-to-top.is-visible {
+  display: inline-flex;
+}
+.back-to-top:hover {
+  background: var(--surface-2);
+  color: var(--text);
+}
+
+@media (max-width: 720px) {
+  .brand-site-header .shell {
+    height: auto;
+    min-height: 56px;
+    padding-block: var(--space-2);
+    align-items: flex-start;
+    flex-direction: column;
+  }
+  .brand-site-header__nav {
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .module-grid,
+  .doc-grid,
+  .feature-grid,
+  .three-col,
+  .info-grid {
+    grid-template-columns: 1fr;
+  }
+}

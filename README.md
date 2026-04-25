@@ -1,41 +1,78 @@
 # 늘봄학교 실무 가이드
 
-늘봄 관련 내용만 분리한 새 도메인용 정적 사이트입니다.
+새 도메인에 바로 올릴 수 있는 정적 사이트 소스입니다. 기존 `/static/style.css` 디자인 시스템을 기준으로 UI를 통일했고, 공통 헤더·히어로·목차·푸터는 `static/site-config.js`와 `static/site.js`에서 관리합니다.
 
-## 핵심 변경사항
-
-- 상단 사이트 제목, 로고 문구, 주요 메뉴, 페이지별 상단 문구, 페이지 목차, 푸터 문구를 `static/site-config.js`로 분리했습니다.
-- 개별 HTML은 `data-page-key`만 지정하고, 공통 헤더·상단 히어로·목차·푸터는 `static/site.js`가 자동 렌더링합니다.
-- 모든 페이지에 공통 “위로” 버튼을 추가했습니다.
-- 기존 문구는 최대한 유지했습니다.
-
-## 주요 페이지
-
-- `/` : 메인
-- `/study-method/` : 업무 공부하는 방법
-- `/training-proposal/` : 늘봄지원실장 및 늘봄학교전담사 역량 강화 연수 제안서
-- `/admin-accounting-guide/` : 늘봄 업무 처리 시 필요한 행정·회계 업무 가이드
-- `/references/` : 근거자료
-- `/file-download/docs/` : PDF 자료 다운로드
-
-## 공통 문구 수정 방법
-
-사이트 제목, 카테고리, 상단 메뉴명, 페이지별 상단 문구를 바꾸려면 다음 파일만 수정하면 됩니다.
+## 구성
 
 ```text
-static/site-config.js
+.
+├─ index.html
+├─ study-method/index.html
+├─ training-proposal/index.html
+├─ admin-accounting-guide/index.html
+├─ references/index.html
+├─ file-download/docs/index.html
+├─ static/
+│  ├─ style.css
+│  ├─ site-config.js
+│  ├─ site.js
+│  ├─ alien.jpg
+│  └─ favicon.ico
+├─ 404.html
+├─ CNAME
+├─ CNAME.example
+├─ robots.txt
+├─ sitemap.xml
+├─ sitemap.xml.example
+└─ FILE-MANIFEST.md
 ```
 
-예를 들어 메뉴명을 바꾸려면 `navigation` 배열의 `label`을 수정하고, 페이지 상단 제목·설명·목차를 바꾸려면 `pages` 객체의 해당 `pageKey` 항목을 수정합니다.
+## 수정 방법
 
-각 HTML의 `body`에는 다음처럼 페이지 키만 유지하면 됩니다.
+### 사이트명, 메뉴, 페이지 상단 문구 수정
+
+`static/site-config.js`만 수정합니다.
+
+```js
+window.NEULBOM_SITE_CONFIG = {
+  site: { ... },
+  navigation: [ ... ],
+  pages: { ... }
+};
+```
+
+### 개별 페이지 연결 기준
+
+각 HTML의 `body data-page-key` 값이 `site-config.js`의 `pages` 키와 같아야 합니다.
 
 ```html
-<body data-page-key="study-method">
+<body class="brand-site" data-page-key="study-method">
 ```
+
+```js
+pages: {
+  "study-method": { ... }
+}
+```
+
+### UI 기준
+
+새로 추가한 그리드, 카드, 페이지 히어로, 브레드크럼, 위로 버튼 보정 CSS는 `/static/style.css` 맨 아래의 `Neulbom standalone fixes` 섹션에 있습니다.
 
 ## 배포
 
-정적 HTML/CSS/JS만 사용합니다. GitHub Pages, Cloudflare Pages, Netlify, 일반 웹호스팅에 업로드할 수 있습니다.
+GitHub Pages 기준으로는 저장소 루트에 그대로 업로드하면 됩니다. 현재 `CNAME`은 다음 도메인으로 되어 있습니다.
 
-새 도메인 연결 시 `CNAME.example`을 참고하여 실제 도메인을 `CNAME`에 입력하고, 필요 시 `sitemap.xml.example`의 도메인을 교체하세요.
+```text
+neulbomworkhaey.co.kr
+```
+
+다른 도메인에 올릴 경우 `CNAME`과 `sitemap.xml`의 도메인을 교체하세요.
+
+## Google Analytics
+
+각 HTML `<head>`에 GA 태그가 들어 있습니다. 측정 ID를 바꾸려면 HTML의 `G-566QGFH7NZ`를 새 측정 ID로 교체하세요.
+
+## 주의
+
+본 사이트는 비공식 실무 보조 자료입니다. 최종 기준은 원문 공문, 학교 자체 운영계획, 계약서, 교육지원청 안내를 우선합니다.
