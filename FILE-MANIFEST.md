@@ -1,0 +1,27 @@
+# File manifest
+
+- `404.html`
+- `CNAME.example`
+- `FILE-MANIFEST.md`
+- `README.md`
+- `admin-accounting-guide/index.html`
+- `file-download/docs/2025-neulbom-work-scope.pdf`
+- `file-download/docs/2026-gangwon-neulbom-guide.pdf`
+- `file-download/docs/2026-grade3-afterschool-support-guide.pdf`
+- `file-download/docs/2026-school-administration-handbook.pdf`
+- `file-download/docs/2026-school-budget-guideline.pdf`
+- `file-download/docs/2026-the-jarram-afterschool-plan.pdf`
+- `file-download/docs/2026-the-jarram-neulbom-plan.pdf`
+- `file-download/docs/gangwon-public-school-accounting-rules.pdf`
+- `file-download/docs/index.html`
+- `file-download/docs/neulbom-work-division-detail.pdf`
+- `index.html`
+- `references/index.html`
+- `robots.txt`
+- `sitemap.xml.example`
+- `static/alien.jpg`
+- `static/favicon.ico`
+- `static/site.js`
+- `static/style.css`
+- `study-method/index.html`
+- `training-proposal/index.html`
