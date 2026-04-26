@@ -51,12 +51,12 @@ window.NEULBOM_SITE_CONFIG = {
 
     "study-method": {
       browserTitle: "업무 공부하는 방법 | 늘봄학교 행정 실무 가이드",
-      footerLabel: "문서등록대장 보고 업무 공부하는 방법",
+      footerLabel: "자기주도적으로 업무 공부하는 방법",
       hero: {
-        breadcrumb: "문서등록대장 보고 업무 공부하는 방법",
+        breadcrumb: "자기주도적으로 업무 공부하는 방법",
         kicker: "Track 01 · Self Study",
-        title: "문서등록대장 보고 업무 공부하는 방법",
-        lead: "늘봄 사업 담당자가 스스로 업무 자료와 근거를 찾아보고 검토하여 본인 스스로 업무를 처리하고, 유관부서에서 업무처리가 가능한 형태의 산출자료를 작성할 수 있다.",
+        title: "자기주도적으로 업무 공부하는 방법",
+        lead: "늘봄학교 업무 담당자가 스스로 관련 자료와 근거를 찾아보고 검토하고 본인 스스로 업무를 처리하여, 유관부서에서 업무처리가 가능한 형태의 산출자료를 작성할 수 있다.",
         actions: [
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
           { label: "행정·회계 가이드로 이동", href: "/admin-accounting-guide/", variant: "primary" }
