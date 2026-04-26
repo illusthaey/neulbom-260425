@@ -58,8 +58,8 @@ window.NEULBOM_SITE_CONFIG = {
         title: "자기주도적으로 업무 공부하는 방법",
         lead: "다음 내용을 숙지하고 평소 적용하고 연습해봅시다. 직종 전환이 2024.8.1.이면 처음이라 모른다는 말을 할 시기는 지났습니다. 스스로 공부하고 연구합시다.",
         actions: [
+          { label: "예시1: 징수요구 서식을 어떻게 고쳤어야 했는지 모르겠을 때", href: "/study-method/example/", variant: "primary" }
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
-          { label: "행정·회계 가이드로 이동", href: "/admin-accounting-guide/", variant: "primary" }
         ],
         toc: [
           { label: "기본 원칙", href: "#principle" },
