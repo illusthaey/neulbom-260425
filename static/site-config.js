@@ -77,8 +77,8 @@ window.NEULBOM_SITE_CONFIG = {
       browserTitle: "업무 공부하는 방법 | 늘봄학교 행정 실무 가이드",
       footerLabel: "징수요구 서식 수정 요구를 받았는데 어떻게 고쳐야할지 모르겠을 때",
       hero: {
-        breadcrumb: "징수요구 서식 수정 요구를 받았는데 어떻게 고쳐야할지 모르겠을 때",
-        kicker: "Track 01 · Self Study",
+        breadcrumb: "업무 공부 및 해결 방법 찾는 예시",
+        kicker: "예시 01 · 서식 변경 요청이 들어왔을 때",
         title: "징수요구 서식 수정 요구를 받았는데 어떻게 고쳐야할지 모르겠을 때",
         lead: "문서등록대장에서 이전 업무 처리 내역을 찾아봅시다.",
         actions: [
