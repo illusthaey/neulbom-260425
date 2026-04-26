@@ -56,7 +56,7 @@ window.NEULBOM_SITE_CONFIG = {
         breadcrumb: "자기주도적으로 업무 공부하는 방법",
         kicker: "Track 01 · Self Study",
         title: "자기주도적으로 업무 공부하는 방법",
-        lead: "늘봄학교 업무 담당자가 스스로 관련 자료와 근거를 찾아보고 검토하고 본인 스스로 업무를 처리하여, 유관부서에서 업무처리가 가능한 형태의 산출자료를 작성할 수 있다.",
+        lead: "다음 내용을 숙지하고 평소 적용하고 연습해봅시다. 직종 전환이 2024.8.1.이면 처음이라 모른다는 말을 할 시기는 지났습니다. 스스로 공부하고 연구합시다.",
         actions: [
           { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } },
           { label: "행정·회계 가이드로 이동", href: "/admin-accounting-guide/", variant: "primary" }
