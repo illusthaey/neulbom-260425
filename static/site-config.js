@@ -79,21 +79,8 @@ window.NEULBOM_SITE_CONFIG = {
       hero: {
         breadcrumb: "자기주도적 업무 해결 방법 / 서식 변경 요청 시 /",
         kicker: "예시 01 · 서식 변경 요청이 들어왔을 때",
-        title: "징수요구 서식을 수정하라고 했는데<br/> 어떻게 고쳐야할지 모르겠다.",
-        lead: "문서등록대장에서 이전 업무 처리 내역을 찾아봅시다.",
-        actions: [
-          { label: "예시1: 징수요구 서식을 어떻게 고쳤어야 했는지 모르겠을 때", href: "/study-method/example/", variant: "primary", attrs: { target: "_blank", rel: "noopener noreferrer" } },
-          { label: "인쇄하기", type: "button", variant: "ghost", attrs: { "data-print": "" } }
-        ],
-        toc: [
-          { label: "기본 원칙", href: "#principle" },
-          { label: "확인 자료", href: "#sources" },
-          { label: "문서등록대장 검색", href: "#records-search" },
-          { label: "질문 양식", href: "#question-template" },
-          { label: "4주 계획", href: "#four-weeks" },
-          { label: "월별 루틴", href: "#monthly-routine" },
-          { label: "자기점검표", href: "#checklist" }
-        ]
+        title: "징수요구 서식 수정해달라고 하는데<br/> 어떻게 고쳐야할지 모르겠다.",
+        lead: "문서등록대장에서 이전 업무 처리 내역을 찾아봅시다."
       }
     },
 
