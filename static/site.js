@@ -190,15 +190,43 @@
     const footer = CONFIG.footer || {};
     const page = pageConfig();
     const year = new Date().getFullYear();
+
+    const brand = footer.masterBrand || footer.brand || "늘봄학교 실무 허브";
+    const edition = footer.editionTitle || footer.note || "비공식 실무 보조 사이트";
+    const operator = footer.operatorName || "";
+    const email = footer.contactEmail || "";
+    const pageLabel = page.footerLabel || "";
+    const alias = footer.playfulAlias || "";
+
     const node = document.createElement("footer");
     node.className = "site-footer no-print";
     node.setAttribute("data-generated-footer", "true");
+
     node.innerHTML = `
       <div class="shell">
-        <p class="footer-brand-line"><span class="footer-brand-name">© ${year} ${escapeHtml(footer.brand || "늘봄학교 실무 허브")}</span><span class="footer-brand-pill">${escapeHtml(page.footerLabel || footer.note || "비공식 실무 보조 사이트")}</span></p>
+        <p class="footer-brand-line">
+          <span class="footer-brand-name">© ${year} ${escapeHtml(brand)}</span>
+          ${alias ? `<span class="footer-brand-pill">${escapeHtml(alias)}</span>` : ""}
+          ${pageLabel ? `<span class="footer-brand-pill">${escapeHtml(pageLabel)}</span>` : ""}
+        </p>
+
+        ${edition ? `<p class="footer-edition">${escapeHtml(edition)}</p>` : ""}
+
+        ${
+          operator || email
+            ? `<p class="footer-contact">
+                ${operator ? `운영: ${escapeHtml(operator)}` : ""}
+                ${operator && email ? " · " : ""}
+                ${email ? `<a href="mailto:${escapeHtml(email)}">${escapeHtml(email)}</a>` : ""}
+              </p>`
+            : ""
+        }
+
         ${footer.trustMessage ? `<p>${escapeHtml(footer.trustMessage)}</p>` : ""}
+        ${footer.affectionLine ? `<p class="footer-affection">${escapeHtml(footer.affectionLine)}</p>` : ""}
       </div>
     `;
+
     document.body.appendChild(node);
   }
 
